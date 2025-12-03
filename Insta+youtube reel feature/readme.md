@@ -1,4 +1,7 @@
+Link:
+https://prismatic-snickerdoodle-819664.netlify.app/
 
+Screenshot :
 C:\Users\ajayg\Pictures\Screenshots\Screenshot 2025-12-02 101642.png
 
 Instagram Reels – Mini Clone
