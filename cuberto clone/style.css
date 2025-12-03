@@ -1,0 +1,454 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html , body{
+        height: 100%;
+        width: 100%;
+        font-family: monospace;
+    }
+    *::selection{
+        color: #fff;
+        background-color: #000;
+    }
+
+    #main{
+        width: 100%;
+        background-color: #fff;
+        
+    }
+
+    #home{
+    width: 100%;
+    min-height: 100vh;
+    anchor-name: --some-anchor;
+    }
+
+
+    /* .anchor{
+        top:anchor(top);
+         left:anchor(left);
+          right:anchor(right);
+           bottom:anchor(bottom);
+           background:linear-gradient(#dad7d7 , #dad7d7);
+           position: absolute;
+           position-anchor: --some-anchor;
+           transition: all ease 0.2s;
+           mix-blend-mode:difference;
+           pointer-events: none;
+    } */
+
+    #nav{
+    width: 100%;
+    padding: 10px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+
+    #nav img{
+        height: 60px;
+        
+    }
+    
+
+
+    #nav .right{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #nav a{
+        text-decoration: none;
+        color: black;
+        letter-spacing: -1px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+
+      #nav a:hover{
+        border-bottom: 1px solid black;
+        margin-top: 8px;
+      }
+
+    #nav h4{
+        cursor: pointer;
+    }
+     #nav h4:hover{
+        scale: 1.2;
+            margin-top: 8px;
+     }
+
+
+    #home #home-main {
+        width: 100%;
+        padding: 15vw 15vw;
+    }
+
+    #home-main h1 {
+        font-weight: 500;
+        letter-spacing: -.1vw;
+        font-size: 1.34vw;
+    }
+
+    #headings {
+        display: flex;
+        gap: 40px;
+        
+    }
+    
+    
+    
+
+    #home-main #headings h1 {
+        color: transparent;
+        -webkit-text-stroke: 1px #000;
+        font-size: 7vw;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: -6px;
+    }
+
+    #home-main #headings h1:hover{
+        transition: all ease 0.6s;
+        color: #000;
+    }
+
+    #home #home-last p{
+        width: 70%;
+        padding: 10vw 0vw;
+        font-size: 1.5vw;
+    }
+
+
+    #feature{
+        padding: 10vh 15vw;
+    background: radial-gradient(circle at 20% 30%, #d4ffea, #a8f5c5, #7ed9b3);
+    
+ }
+
+    #feature>h1{
+        font-weight: 100;
+    }
+
+    #feature #fheadings{
+        font-size: 2vw;
+        letter-spacing: -4px;
+        line-height: 60px;
+    }
+    #feature #fheadings>h1:nth-child(2){
+        color: transparent ;
+        -webkit-text-stroke: 1px #000;
+    }
+
+    #fimages{
+        width: 100%;
+        height: 100vh;
+        margin-top: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #fleft{
+        overflow: hidden;
+    width: 45%;
+    height: inherit;
+    }
+    #fleft .fleftlm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: inherit;
+        width: 100%;
+    }
+
+    #fleft .fleftlm h2{
+        font-weight: 400;
+    }
+    #fleft .fleftlm h1{
+        text-transform: capitalize;
+        margin: 20px 0;
+        line-height: 2vw;
+        font-weight: 500;
+    }
+    #fleft .fleftlm h4{
+        opacity: 0.6;
+    }
+
+    #fright{
+    width: 45%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end  ;
+    }
+
+    #fright .images{
+        overflow: hidden;
+        height: 80%;
+        width: 90%;
+        border-radius: 10px;
+    }
+
+
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3vw;
+    }
+
+    .btn button{
+        font-weight: 500 ;
+        font-size: 1vw;
+        padding: 15px 15px;
+        border-radius: 100px;
+        letter-spacing: -.7px;
+        background-color: #fff;
+        border: 1px solid #000;
+        cursor: pointer;
+    }
+
+    .btn button:hover{
+        background-color: #000;
+        color: #f7f7f7;
+    }
+
+
+    #dev{
+        padding: 10vh 15vw;
+        width: 100%;
+    }
+    #dev h1{
+        width:  60%;
+        font-weight: 500;  
+        font-size: 3.8vw; 
+        line-height: 1;
+    }
+    #dev p{
+        margin-top: 3vw;
+        letter-spacing: -.5px;
+        width: 60%;
+        font-size: 1.3vw;
+    }
+
+    #slides {
+        padding: 3vw 10vw;
+        display: flex;
+        justify-content: space-between;
+        transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+
+    }
+   
+
+
+
+    .slide {
+        width: 30%;
+    }
+     .slide:hover{
+        transform: scale(1.1) !important;
+        opacity: 1 !important;
+    }
+
+      #slides:has(.slide:hover) .slide{
+        transform: scale(0.9);
+        opacity: 0.8;
+      }
+
+    .slide .img {
+        width: 100%;
+        height: 270px;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: yellow;
+    }
+
+    .slide .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slide .tag {
+        width: fit-content;
+        border-radius: 100px;
+        padding: 10px 22px;
+        background-color: #f7f7f7;
+        margin: 20px 0;
+    }
+
+    .slide h3 {
+        font-size: 1.4vw;
+        font-weight: 400;
+        letter-spacing: -.5px;
+    }
+
+
+    #last{
+        padding: 5vh 15vw;
+        width: 100%;
+    }
+    #last h1{
+        width:  60%;
+        font-weight: 500;  
+        font-size: 3.8vw; 
+        line-height: 1;
+    }
+
+
+
+    #last-slide {
+        padding: 5vh 10vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #last-slide .slide {
+        width: 30%;
+    }
+
+    #last-slide .slide .img {
+        width: 90%;
+        height: 270px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    #last-slide .slide .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #last-slide .slide .tag {
+        width: fit-content;
+        border-radius: 100px;
+        padding: 10px 22px;
+        background-color: #f7f7f7;
+        margin: 20px 0;
+        font-weight: 800;
+    }
+
+    #last-slide .slide h3 {
+        font-size: 1.4vw;
+        font-weight: 400;
+        letter-spacing: -.5px;
+    }
+
+
+  
+    
+    footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10vh 15vw;
+    margin-top:  10vh;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.f-left {
+    width: 40%;
+}
+
+.f-left h1 {
+    font-size: 3vw;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.f-left button {
+    margin-top: 2vw;
+    padding: 15px 30px;
+    font-size: 1vw;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.f-left button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.f-right {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-col h3 {
+    font-size: 1.2vw;
+    margin-bottom: 20px;
+}
+
+.f-col a {
+    display: block;
+    text-decoration: none;
+    color: #dadada;
+    margin-bottom: 10px;
+    font-size: 1vw;
+}
+
+.f-col a:hover {
+    color: #fff;
+}
+
+#footer-bottom {
+    margin-top: 5vh;
+    text-align: center;
+    color: #777;
+    font-size: 0.9vw;
+}
+
+
+
+.cursor {
+      height: 45px;
+    width: 45px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0.15s ease-out;
+    z-index: 9999;
+}
+
+
+.cursor.btn-hover {
+    height: 45px;
+    width: 45px;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+
+.cursor.img-hover {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    mix-blend-mode: normal  ;
+}
+
+.cursor.heading-hover {
+  height: 20px;   
+  width: 20px;
+   mix-blend-mode: normal  ;
+}
